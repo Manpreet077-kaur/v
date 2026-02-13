@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Manpreet ❤️ Aditya</title>
+
 <style>
 body{
 margin:0;
-font-family:'Segoe UI',sans-serif;
-background:linear-gradient(135deg,#ffd6e0,#ffc2d1);
+font-family:Arial;
+background:linear-gradient(135deg,#ffd6e0,#ff9aa2);
 text-align:center;
-color:#fff;
-overflow-x:hidden;
+color:white;
 }
+
 #login{
 height:100vh;
 display:flex;
@@ -20,35 +20,25 @@ flex-direction:column;
 justify-content:center;
 align-items:center;
 }
-input{
-padding:12px;
-border-radius:25px;
-border:none;
-text-align:center;
-width:200px;
-}
+
 button{
-margin-top:15px;
-padding:12px 25px;
+padding:12px 20px;
 border:none;
-border-radius:25px;
+border-radius:20px;
 background:white;
 color:#ff4d6d;
+margin-top:10px;
 cursor:pointer;
 }
+
 #main{display:none;padding:20px;}
+
 .card{
 background:rgba(255,255,255,0.25);
-backdrop-filter:blur(10px);
-border-radius:20px;
 padding:20px;
-margin:25px auto;
-max-width:520px;
-}
-img{
-width:230px;
-border-radius:15px;
-margin:10px;
+border-radius:20px;
+margin:20px auto;
+max-width:500px;
 }
 </style>
 </head>
@@ -56,10 +46,11 @@ margin:10px;
 <body>
 
 <div id="login">
-<h2>💌 A Secret Surprise For Aditya</h2>
-<input type="password" id="password" placeholder="Password">
-<button onclick="checkPassword()">Open ❤️</button>
-<p id="error"></p>
+<h2>💌 Secret For Aditya</h2>
+<input type="password" id="pass" placeholder="Password">
+<br>
+<button onclick="openSite()">Open ❤️</button>
+<p id="err"></p>
 </div>
 
 <div id="main">
@@ -67,29 +58,26 @@ margin:10px;
 <h2>Manpreet ❤️ Aditya Gupta</h2>
 
 <div class="card">
+<p>
 I am your Chuaa and you are my Billa ❤️<br><br>
 I know mai tumara khoon pe leta hoon but love your khoon only my shonu kaku.<br><br>
 I love you thissss......... much.<br><br>
 Happy Valentine my love.<br>
 I am very lucky and happiest woman on the earth to have you in my life.<br><br>
 Khoon thoda bdaa lo mai aur peeougi sari zindgi 😊<br><br>
-<b>I Love you my lovuuuu 
+<b>I Love you my lovuuuu ❤️</b>
+</p>
 </div>
-
-<img src="photo1.jpg">
-<img src="photo2.jpg">
 
 </div>
 
 <script>
-const correctPassword="2402";
-function checkPassword(){
-const entered=document.getElementById("password").value;
-if(entered===correctPassword){
+function openSite(){
+if(document.getElementById("pass").value==="lovuuuu"){
 document.getElementById("login").style.display="none";
 document.getElementById("main").style.display="block";
 }else{
-document.getElementById("error").innerText="Wrong password ❤️";
+document.getElementById("err").innerText="Wrong password ❤️";
 }
 }
 </script>
