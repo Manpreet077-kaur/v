@@ -1,192 +1,94 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2575.4">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Manpreet ❤️ Aditya</title>
+<style>
+body{
+margin:0;
+font-family:'Segoe UI',sans-serif;
+background:linear-gradient(135deg,#ffd6e0,#ffc2d1);
+text-align:center;
+color:#fff;
+overflow-x:hidden;
+}
+#login{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+}
+input{
+padding:12px;
+border-radius:25px;
+border:none;
+text-align:center;
+width:200px;
+}
+button{
+margin-top:15px;
+padding:12px 25px;
+border:none;
+border-radius:25px;
+background:white;
+color:#ff4d6d;
+cursor:pointer;
+}
+#main{display:none;padding:20px;}
+.card{
+background:rgba(255,255,255,0.25);
+backdrop-filter:blur(10px);
+border-radius:20px;
+padding:20px;
+margin:25px auto;
+max-width:520px;
+}
+img{
+width:230px;
+border-radius:15px;
+margin:10px;
+}
+</style>
 </head>
+
 <body>
-<p class="p1">&lt;!DOCTYPE html&gt;</p>
-<p class="p1">&lt;html lang="en"&gt;</p>
-<p class="p1">&lt;head&gt;</p>
-<p class="p1">&lt;meta charset="UTF-8"&gt;</p>
-<p class="p1">&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
-<p class="p1">&lt;title&gt;Manpreet ❤️ Aditya&lt;/title&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;style&gt;</p>
-<p class="p1">body{</p>
-<p class="p1"><span class="Apple-converted-space">  </span>margin:0;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>font-family:'Segoe UI',sans-serif;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>background:linear-gradient(135deg,#ffd6e0,#ffc2d1);</p>
-<p class="p1"><span class="Apple-converted-space">  </span>text-align:center;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>color:#fff;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>overflow-x:hidden;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">/* PASSWORD PAGE */</p>
-<p class="p1">#login{</p>
-<p class="p1"><span class="Apple-converted-space">  </span>height:100vh;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>display:flex;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>flex-direction:column;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>justify-content:center;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>align-items:center;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">input{</p>
-<p class="p1"><span class="Apple-converted-space">  </span>padding:12px;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>border-radius:25px;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>border:none;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>text-align:center;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>width:200px;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">button{</p>
-<p class="p1"><span class="Apple-converted-space">  </span>margin-top:15px;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>padding:12px 25px;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>border:none;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>border-radius:25px;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>background:white;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>color:#ff4d6d;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>font-size:16px;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>cursor:pointer;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>transition:0.3s;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">button:hover{</p>
-<p class="p1"><span class="Apple-converted-space">  </span>transform:scale(1.08);</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">/* MAIN CONTENT */</p>
-<p class="p1">#main{</p>
-<p class="p1"><span class="Apple-converted-space">  </span>display:none;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>padding:20px;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">h1{</p>
-<p class="p1"><span class="Apple-converted-space">  </span>font-size:38px;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">.card{</p>
-<p class="p1"><span class="Apple-converted-space">  </span>background:rgba(255,255,255,0.25);</p>
-<p class="p1"><span class="Apple-converted-space">  </span>backdrop-filter:blur(10px);</p>
-<p class="p1"><span class="Apple-converted-space">  </span>border-radius:20px;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>padding:20px;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>margin:25px auto;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>max-width:520px;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>line-height:1.6;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">img{</p>
-<p class="p1"><span class="Apple-converted-space">  </span>width:230px;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>border-radius:15px;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>margin:10px;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>box-shadow:0 5px 15px rgba(0,0,0,0.2);</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">/* FLOATING HEARTS */</p>
-<p class="p1">.heart{</p>
-<p class="p1"><span class="Apple-converted-space">  </span>position:fixed;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>bottom:-20px;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>animation:floatUp 6s linear infinite;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">@keyframes floatUp{</p>
-<p class="p1"><span class="Apple-converted-space">  </span>from{transform:translateY(0);opacity:1;}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>to{transform:translateY(-100vh);opacity:0;}</p>
-<p class="p1">}</p>
-<p class="p1">&lt;/style&gt;</p>
-<p class="p1">&lt;/head&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;body&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;!-- PASSWORD SCREEN --&gt;</p>
-<p class="p1">&lt;div id="login"&gt;</p>
-<p class="p1">&lt;h2&gt;💌 A Secret Surprise For Aditya&lt;/h2&gt;</p>
-<p class="p1">&lt;p&gt;Enter Password&lt;/p&gt;</p>
-<p class="p1">&lt;input type="password" id="password" placeholder="Password"&gt;</p>
-<p class="p1">&lt;button onclick="checkPassword()"&gt;Open ❤️&lt;/button&gt;</p>
-<p class="p1">&lt;p id="error"&gt;&lt;/p&gt;</p>
-<p class="p1">&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;!-- MAIN WEBSITE --&gt;</p>
-<p class="p1">&lt;div id="main"&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;h1&gt;Happy Valentine's Day ❤️&lt;/h1&gt;</p>
-<p class="p1">&lt;h2&gt;Manpreet ❤️ Aditya Gupta&lt;/h2&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;div class="card"&gt;</p>
-<p class="p1">&lt;p&gt;</p>
-<p class="p1">I am your &lt;b&gt;Chuaa&lt;/b&gt; and you are my &lt;b&gt;Billa&lt;/b&gt; 🥹❤️&lt;br&gt;&lt;br&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">I know mai tumara khoon pe leta hoon but love your khoon only my shonu kaku 💕&lt;br&gt;&lt;br&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">I love you thissss......... much ❤️&lt;br&gt;&lt;br&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">Happy Valentine my love.&lt;br&gt;</p>
-<p class="p1">I am very lucky and happiest woman on the earth to have you in my life.&lt;br&gt;&lt;br&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">Khoon thoda bdaa lo mai aur peeougi sari zindgi 😊&lt;br&gt;&lt;br&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;b&gt;I Love you my lovuuuu ❤️&lt;/b&gt;</p>
-<p class="p1">&lt;/p&gt;</p>
-<p class="p1">&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;h3&gt;Our Memories 📸&lt;/h3&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;img src="photo1.jpg"&gt;</p>
-<p class="p1">&lt;img src="photo2.jpg"&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;div class="card"&gt;</p>
-<p class="p1">&lt;h3&gt;Forever &amp; Always 💕&lt;/h3&gt;</p>
-<p class="p1">&lt;p&gt;</p>
-<p class="p1">With you, every moment feels special. <span class="Apple-converted-space"> </span></p>
-<p class="p1">You are my happiness, my peace, and my forever person. <span class="Apple-converted-space"> </span></p>
-<p class="p1">Thank you for being mine ❤️</p>
-<p class="p1">&lt;/p&gt;</p>
-<p class="p1">&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p2"><br></p>
-<p class="p1">&lt;script&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">/* PASSWORD */</p>
-<p class="p1">const correctPassword = "lovuuuu";</p>
-<p class="p2"><br></p>
-<p class="p1">function checkPassword(){</p>
-<p class="p1"><span class="Apple-converted-space">  </span>const entered=document.getElementById("password").value;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>if(entered===correctPassword){</p>
-<p class="p1"><span class="Apple-converted-space">    </span>document.getElementById("login").style.display="none";</p>
-<p class="p1"><span class="Apple-converted-space">    </span>document.getElementById("main").style.display="block";</p>
-<p class="p1"><span class="Apple-converted-space">  </span>}else{</p>
-<p class="p1"><span class="Apple-converted-space">    </span>document.getElementById("error").innerText="Wrong password ❤️";</p>
-<p class="p1"><span class="Apple-converted-space">  </span>}</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">/* HEART ANIMATION */</p>
-<p class="p1">function createHeart(){</p>
-<p class="p1"><span class="Apple-converted-space">  </span>const heart=document.createElement("div");</p>
-<p class="p1"><span class="Apple-converted-space">  </span>heart.className="heart";</p>
-<p class="p1"><span class="Apple-converted-space">  </span>heart.innerHTML="❤️";</p>
-<p class="p1"><span class="Apple-converted-space">  </span>heart.style.left=Math.random()*100+"vw";</p>
-<p class="p1"><span class="Apple-converted-space">  </span>heart.style.fontSize=(15+Math.random()*20)+"px";</p>
-<p class="p1"><span class="Apple-converted-space">  </span>heart.style.animationDuration=(4+Math.random()*3)+"s";</p>
-<p class="p1"><span class="Apple-converted-space">  </span>document.body.appendChild(heart);</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>setTimeout(()=&gt;heart.remove(),6000);</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">setInterval(createHeart,300);</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;/script&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;/body&gt;</p>
-<p class="p1">&lt;/html&gt;</p>
+
+<div id="login">
+<h2>💌 A Secret Surprise For Aditya</h2>
+<input type="password" id="password" placeholder="Password">
+<button onclick="checkPassword()">Open ❤️</button>
+<p id="error"></p>
+</div>
+
+<div id="main">
+<h1>Happy Valentine's Day ❤️</h1>
+<h2>Manpreet ❤️ Aditya Gupta</h2>
+
+<div class="card">
+I am your <b>Chuaa</b> and you are my <b>Billa</b> ❤️<br><br>
+Happy Valentine my love.<br>
+I love you my lovuuuu ❤️
+</div>
+
+<img src="photo1.jpg">
+<img src="photo2.jpg">
+
+</div>
+
+<script>
+const correctPassword="2402";
+function checkPassword(){
+const entered=document.getElementById("password").value;
+if(entered===correctPassword){
+document.getElementById("login").style.display="none";
+document.getElementById("main").style.display="block";
+}else{
+document.getElementById("error").innerText="Wrong password ❤️";
+}
+}
+</script>
+
 </body>
 </html>
